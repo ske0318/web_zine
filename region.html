@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <main id="body-wrap">
+       <header id="header-cont">
+            <div id="title-cont">
+                <a href="index.html">
+                    <p class="title-color">주말에 뭐하지? 6월호</p>
+                </a>
+            </div>
+        </header>
+
+       <div id="nav">
+            <nav>
+                <a class="nav-underline" href="region.html">지역별</a>
+                <a class="nav-underline" href="genre.html">장르별</a>
+                <a class="nav-underline" href="calendar.html">달력보기</a> 
+                 <a class="nav-underline" href="news.html">뉴스피드</a> 
+                <div id="search-box">
+                    <input type="text" id="search" placeholder="축제이름을 검색하세요!" size="30">
+                    <input id="search-input" type="image" src="img/search.png" alt="Submit">
+                </div>
+            </nav>
+        </div>
+         <section id="event-wrap">
+            <header>
+                <h1 id="event-title"></h1>
+            </header>
+            <div class="event-wrapper">
+
+                <div class="bf-nt-cont">
+                    <img class="left" src="img/before.png">
+                </div>
+
+                <div class="slideshow2">
+                    <!--수동슬라이드-->
+                    <img src="img/photo1-1.jpg" class="con2-img" />
+                    <img src="img/photo1-2.jpg" class="con2-img" />
+                    <img src="img/photo1-3.jpg" class="con2-img" />
+                </div>
+
+                <div class="bf-nt-cont">
+                    <img class="left" src="img/after.png">
+                </div>
+
+            </div>
+
+            <div id="event-content">
+                <div id="content2-detail">
+                </div>
+                <dl class="accordion">
+                    <dt>내용</dt>
+                    <dd id="con"></dd>
+                    <dt>기타</dt>
+                    <dd id="etc"></dd>
+                </dl>
+            </div>
+        </section>
+        <section class="rg-gr-wrapper">
+            <h2 class="rg-gr-title rg-gr-title_1">서울&경기도</h2>
+            <div class="rg-gr-cont">
+                <div class="bf-nt-cont">
+                    <img id="pre5" src="img/before.png">
+                </div>
+                <div id="slide5">
+                    <img class="seoul" src="img/sea_1_1.jpg">
+                    <img class="seoul" src="img/sea_2_1.jpg">
+                    <img class="seoul" src="img/culture_1_1.jpg">
+                    <img class="seoul" src="img/culture_3_1.jpg">
+                    <img class="seoul" src="img/culture_5_1.jpg" style="display: none">
+                    <img class="seoul" src="img/flower_2_1.jpg" style="display: none">
+                    <img class="seoul" src="img/flower_5_1.jpg" style="display: none">
+                    <img class="seoul" src="img/food_1_1.JPG" style="display: none">
+                    <img class="seoul" src="img/food_2_1.JPG" style="display: none">
+                    <img class="seoul" src="img/food_3_1.PNG" style="display: none">
+                </div>
+                <div class="bf-nt-cont">
+                    <img id="next5" src="img/after.png">
+                </div>
+            </div>
+            <h2 class="rg-gr-title rg-gr-title_2">경상도</h2>
+            <div class="rg-gr-cont">
+                <div class="bf-nt-cont">
+                    <img id="pre6" src="img/before.png">
+                </div>
+                <div id="slide6">
+                    <img class="gyung" src="img/sea_3_1.jpg">
+                    <img class="gyung" src="img/sea_5_1.jpg">
+                    <img class="gyung" src="img/culture_6_1.jpg">
+                    <img class="gyung" src="img/flower_6_1.jpg">
+                    <img class="gyung" src="img/food_4_1.jpg" style="display: none">
+                    <img class="gyung" src="img/food_6_1.jpg" style="display: none">
+                </div>
+                <div class="bf-nt-cont">
+                    <img id="next6" src="img/after.png">
+                </div>
+            </div>
+            <h2 class="rg-gr-title rg-gr-title_3">충청도</h2>
+            <div class="rg-gr-cont">
+                <div class="bf-nt-cont">
+                    <img id="pre7" src="img/before.png">
+                </div>
+                <div id="slide7">
+                    <img class="chung" src="img/culture_2_1.jpg">
+                    <img class="chung" src="img/flower_1_1.jpg">
+                    <img class="chung" src="img/flower_4_1.jpg">
+                    <img class="chung" src="img/food_5_1.JPG">
+                </div>
+                <div class="bf-nt-cont">
+                    <img id="next7" src="img/after.png">
+                </div>
+            </div>
+            <h2 class="rg-gr-title rg-gr-title_4">전라도&강원도</h2>
+            <div class="rg-gr-cont">
+                <div class="bf-nt-cont">
+                    <img id="pre8" src="img/before.png">
+                </div>
+                <div id="slide8">
+                    <img class="jeun_gang" src="img/sea_4_1.jpg">
+                    <img class="jeun_gang" src="img/sea_6_1.jpg">
+                    <img class="jeun_gang" src="img/sea_7_1.jpg">
+                    <img class="jeun_gang" src="img/culture_4_1.jpg">
+                    <img class="jeun_gang" src="img/flower_3_1.jpg" style="display: none">
+                </div>
+                <div class="bf-nt-cont">
+                    <img id="next8" src="img/after.png">
+                </div>
+            </div>
+        </section>
+       
+
+    </main>
+
+    <footer>
+        <aside class="ft-bx-1">
+            <div>
+                <h1>주말에 뭐하지?</h1>
+            </div>
+            <div>
+               <h2>
+                   Web Programming, 2018 Spring
+               </h2>
+            </div>
+        </aside>
+
+        <aside class="ft-bx-2">
+            <div>
+               <p>Made by: <br>최승연 성기은 김시은 손영현</p>
+            </div>
+            <div id="icon-cont">
+                <a href="https://www.facebook.com/"><div><img src="img/Facebook.png"></div></a>
+                <a href="https://www.instagram.com"><div><img src="img/Instagram.png"></div></a>
+                <a href="https://www.youtube.com"><div><img src="img/YouTube.png"></div></a>
+            </div>
+        </aside>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

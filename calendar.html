@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="fullcalendar.min.css">
+    <link rel="stylesheet" href="fullcalendar.print.min.css" media="print">
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src='moment.min.js'></script>
+    <script src='jquery.min.js'></script>
+    <script src='fullcalendar.min.js'></script>
+    <script src="js.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,listWeek'
+                },
+                defaultDate: '2018-06-01',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [{
+                    color:'#CCEDFA',
+                    url:'https://www.facebook.com/watergunfesta',
+                    title: '서촌 물총 축제',
+                    start: '2018-07-07',
+                    end: '2018-07-08'
+                },{
+                    color:'#CCEDFA',
+                    url:'http://festival.jangheung.go.kr/festival',
+                    title: '정남진 장흥 물축제',
+                    start: '2018-07-27',
+                    end: '2018-08-02'
+                },{
+                    color:'#CCEDFA',
+                    url:'http://www.bfo.or.kr/main/index.asp',
+                    title: '부산 바다 축제',
+                    start: '2018-08-10',
+                    end: '2018-08-05'
+                },{
+                    color:'#CCEDFA',
+                    url:'http://www.chmbc.co.kr/life/starfes.asp',
+                    title: '춘천 호수 별빛나라 축제',
+                    start: '2018-06-18',
+                    end: '2018-10-31'
+                },{
+                    color:'#CCEDFA',
+                    url:'http://www.gochang.go.kr/mud-exp/index.gochang',
+                    title: '고창 갯벌 축제',
+                    start: '2018-08-03',
+                    end: '2018-08-05'
+                },{
+                    color:'#A0F7DC',
+                    url:'https://www.chf.or.kr/c1/sub5.jsp?brdType=R&bbIdx=105526',
+                    title: '창덕궁 달빛 기행',
+                    start: '2018-08-23',
+                    end: '2018-10-28'
+                },{
+                    color:'#A0F7DC',
+                    url:'https://hansanmosi.kr',
+                    title: '한산 모시 문화제',
+                    start: '2018-06-22',
+                    end: '2018-06-25'
+                },{
+                    color:'#A0F7DC',
+                    url:'https://www.seoulfringefestival.net:5632/',
+                    title: '프린지 페스티벌',
+                    start: '2018-08-15',
+                    end: '2018-08-18'
+                },{
+                    color:'#A0F7DC',
+                    url:'http://www.gangjinfes.or.kr/index.php',
+                    title: '강진 청자 축제',
+                    start: '2018-07-28',
+                    end: '2018-08-03'
+                },{
+                    color:'#A0F7DC',
+                    url:'http://www.bicof.com/',
+                    title: '부천 국제 만화 축제',
+                    start: '2018-08-15',
+                    end: '2018-08-19'
+                },{
+                    color:'#A0F7DC',
+                    url:'http://www.dibf.co.kr',
+                    title: '대구 국제 바디페인팅 페스티벌',
+                    start: '2018-08-25',
+                    end: '2018-08-26'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://www.xn--js0bz0g15jvvd8vh0a700bh8n.kr/',
+                    title: '부여 서동 연꽃축제',
+                    start: '2018-07-06',
+                    end: '2018#FFDEE5-07-15'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://grandpark.seoul.go.kr',
+                    title: '장미원 축제',
+                    start: '2018-05-26',
+                    end: '2018-06-10'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://www.sunflowerfestival.co.kr',
+                    title: '태백 해바라기 축제',
+                    start: '2018-07-20',
+                    end: '2018-08-12'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://www.alpsvill.com',
+                    title: '세계 조롱박 축제',
+                    start: '2018-07-20',
+                    end: '2018-08-19'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://www.morningcalm.co.k',
+                    title: '아침고요 산수국 축제/수국 전시회',
+                    start: '2018-06-09',
+                    end: '2018-07-08'
+                },{
+                    color:'#FFDEE5',
+                    url:'http://blog.magformers.co.k',
+                    title: '부산 태종사 수국꽃 문화 축제',
+                    start: '2018-06-30',
+                    end: '2018-07-08'
+                },{
+                    color:'#F8E3AF',
+                    url:'http://www.songdobeer.com',
+                    title: '송도 맥주축제',
+                    start: '2018-08-24',
+                    end: '2018-09-01'
+                },{
+                    color:'#F8E3AF',
+                    url:'https://www.bamdokkaebi.org',
+                    title: '밤도깨비 야시장',
+                    start: '2018-03-30',
+                    end: '2018-10-28'
+                },{
+                    color:'#F8E3AF',
+                    url:'http://shop.bookpalcomics.com',
+                    title: '서울 디저트 페어',
+                    start: '2018-07-14',
+                    end: '2018-07-15'
+                },{
+                    color:'#F8E3AF',
+                    url:'http://www.chimacfestival.com',
+                    title: '대구 치맥 페스티벌',
+                    start: '2018-07-18',
+                    end: '2018-07-22'
+                },{
+                    color:'#F8E3AF',
+                    url:'http://www.ydft.kr',
+                    title: '영동 포도 축제',
+                    start: '2018-08-23',
+                    end: '2018-08-26'
+                },{
+                    color:'#F8E3AF',
+                    url:'http://www.bonghwafestival.com/eunuh',
+                    title: '봉화 은어 축제',
+                    start: '2018-07-28',
+                    end: '2018-08-04'
+                },{
+                    color:'#CCEDFA',
+                    title: '양평 메기 수염 축제',
+                    url:'http://summerfestival.kr/main/main.php',
+                    start: '2018-06-02',
+                    end: '2018-08-31'
+
+                },{
+                    color:'#CCEDFA',
+                    url:'https://phcf.or.kr/kr/sub.do?MENU_SEQ=10100&PAGE_SEQ=10266&LANG=ko_KR',
+                    title: '포항 국제 불빛 축제',
+                    start: '2018-07-25',
+                    end: '2018-07-29'
+                }]
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <main id="body-wrap">
+       <header id="header-cont">
+              <div id="title-cont">
+                <a href="index.html">
+                    <p class="title-color">주말에 뭐하지? 6월호</p>
+                </a>
+            </div>
+        </header>
+        <div id="nav">
+            <nav>
+                <a class="nav-underline" href="region.html">지역별</a>
+                <a class="nav-underline" href="genre.html">장르별</a>
+                <a class="nav-underline" href="calendar.html">달력보기</a>
+                <a class="nav-underline" href="news.html">뉴스피드</a>
+            </nav>
+        </div>
+
+
+        <div class="item-wrap">
+            <div id="calendar"></div>
+        </div>
+
+
+    </main>
+
+<footer>
+        <aside class="ft-bx-1">
+            <div>
+                <h1>주말에 뭐하지?</h1>
+            </div>
+            <div>
+               <h2>
+                   Web Programming, 2018 Spring
+               </h2>
+            </div>
+        </aside>
+
+        <aside class="ft-bx-2">
+            <div>
+               <p>Made by: <br>최승연 성기은 김시은 손영현</p>
+            </div>
+            <div id="icon-cont">
+                <a href="https://www.facebook.com/"><div><img src="img/Facebook.png"></div></a>
+                <a href="https://www.instagram.com"><div><img src="img/Instagram.png"></div></a>
+                <a href="https://www.youtube.com"><div><img src="img/YouTube.png"></div></a>
+            </div>
+        </aside>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
